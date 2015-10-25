@@ -1,0 +1,7 @@
+1.2 Build 197
+
+- Error log functionality added to the installer (legacy)
+- Installer now stops the process if a problem occurs
+- Fixed Vista 64bit fsx.exe path issue (missing backslash)
+- Refactored code for main application and service
+- Shortcut creation errors fixed
