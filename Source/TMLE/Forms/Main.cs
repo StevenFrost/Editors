@@ -155,6 +155,11 @@ namespace TextureMaxLoadEditor.Forms
                 {
                     try
                     {
+                        if (!Directory.Exists(Application.StartupPath + @"\Profiles\"))
+                        {
+                            Directory.CreateDirectory(Application.StartupPath + @"\Profiles\");
+                        }
+
                         if (!File.Exists(Application.StartupPath + @"\Profiles\default.ini"))
                         {
                             // Copy the resource
@@ -228,6 +233,11 @@ namespace TextureMaxLoadEditor.Forms
                             dateTime = dateTime.Replace("/", "");
                             dateTime = dateTime.Replace(" ", "_");
                             dateTime = dateTime.Replace(":", "");
+
+                            if (!Directory.Exists(Application.StartupPath + @"\Backups\"))
+                            {
+                                Directory.CreateDirectory(Application.StartupPath + @"\Backups\");
+                            }
 
                             // Make a copy of exe.xml
                             File.Copy(iniFile.ReadValue("LOCATIONS", "cfg") + @"\exe.xml", Application.StartupPath + @"\Backups\exe_xml_backup_" + dateTime + ".bak");

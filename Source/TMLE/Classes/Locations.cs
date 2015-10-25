@@ -99,7 +99,7 @@ namespace TextureMaxLoadEditor.Locations
             else if (fsxReg64 != null)
             {
                 // Check the ending of the string
-                if (fsxReg64.EndsWith(@"\") == false)
+                if (fsxReg64.EndsWith(@"\"))
                 {
                     // Remove the slash
                     fsxReg64 = fsxReg64.Remove(fsxReg64.Length - 1, 1);
