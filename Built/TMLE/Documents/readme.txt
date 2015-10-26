@@ -17,7 +17,8 @@ Version 1.2.190 - Initial Release
 Version 1.2.195 - Patch to fix some small bugs
 Version 1.2.196 - Small fixes with incorrect messages
 Version 1.2.197 - Small bugfixes related to 64bit operating systems
-Version 2.0.0   - Brand new application with new features
+Version 2.0.1   - Brand new application with new features
+Version 2.0.2   - Bug fixes
 
 ---------------------------------------
 
