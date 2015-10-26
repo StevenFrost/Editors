@@ -155,3 +155,8 @@ $RECYCLE.BIN/
 # Ignore default generated files specific to TMLE/LODRE
 Built/TMLE/locations.ini
 Built/TMLE/Profiles/
+Built/LODRE/locations.ini
+Built/LODRE/Profiles/
+
+# Libraries
+Interop.IWshRuntimeLibrary.dll

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Texture Max Load Editor")]
-[assembly: AssemblyDescription("A small utility for editing the Texture Max Load value in a Flight Simulator X configuration file")]
+[assembly: AssemblyTitle("Level of Detail Radius Editor")]
+[assembly: AssemblyDescription("A utility that makes changing the 'Level of Detail Radius' value in fsx.cfg easier")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Texture Max Load Editor")]
+[assembly: AssemblyProduct("Level of Detail Radius Editor")]
 [assembly: AssemblyCopyright("Copyright © 2009 - 2015 Steven Frost and Orion Lyau")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fca7d924-17f7-40a2-a88d-a0a50c3c1db2")]
+[assembly: Guid("f8f14a63-2aa5-4d9b-830a-e003c48d184a")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,6 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.0.0.0")]
-[assembly: AssemblyInformationalVersion("2.0.0.0 (Release.20121130-2332)")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

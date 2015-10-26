@@ -1,5 +1,7 @@
-﻿namespace TextureMaxLoadEditor.Forms {
-    partial class Options {
+﻿namespace LODRadiusEditor
+{
+    partial class Options
+    {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -9,8 +11,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -22,7 +26,9 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
             this.optionsTabs = new System.Windows.Forms.TabControl();
             this.optionsGeneral = new System.Windows.Forms.TabPage();
             this.optionsGeneral31 = new System.Windows.Forms.RadioButton();
@@ -38,15 +44,15 @@
             this.optionsAuto1L = new System.Windows.Forms.Label();
             this.optionsAuto3 = new System.Windows.Forms.CheckBox();
             this.optionsAuto0 = new System.Windows.Forms.CheckBox();
-            this.OptionsResolutions = new System.Windows.Forms.TabPage();
-            this.optionsResolutionRemove = new System.Windows.Forms.Button();
-            this.optionsResolutionEdit = new System.Windows.Forms.Button();
+            this.OptionsRadii = new System.Windows.Forms.TabPage();
+            this.optionsRadiusRemove = new System.Windows.Forms.Button();
+            this.optionsRadiusEdit = new System.Windows.Forms.Button();
             this.optionsResolutionAdd = new System.Windows.Forms.Button();
             this.optionsResolutionDefinitionL = new System.Windows.Forms.Label();
-            this.optionsResolutionDefinition = new System.Windows.Forms.TextBox();
+            this.optionsRadiusDefinition = new System.Windows.Forms.TextBox();
             this.optionsResolutionValueL = new System.Windows.Forms.Label();
-            this.optionsResolutionValue = new System.Windows.Forms.TextBox();
-            this.optionsResolutionR = new System.Windows.Forms.ListBox();
+            this.optionsRadiusValue = new System.Windows.Forms.TextBox();
+            this.optionsRadiusR = new System.Windows.Forms.ListBox();
             this.optionsUpdates = new System.Windows.Forms.TabPage();
             this.optionsUpdates1 = new System.Windows.Forms.CheckBox();
             this.optionsUpdatesPast = new System.Windows.Forms.ListBox();
@@ -55,12 +61,12 @@
             this.saveButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.locateFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.optionsAutoToolTip = new System.Windows.Forms.ToolTip();
+            this.optionsAutoToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.defaultSettings = new System.Windows.Forms.Button();
             this.optionsTabs.SuspendLayout();
             this.optionsGeneral.SuspendLayout();
             this.optionsAuto.SuspendLayout();
-            this.OptionsResolutions.SuspendLayout();
+            this.OptionsRadii.SuspendLayout();
             this.optionsUpdates.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +74,7 @@
             // 
             this.optionsTabs.Controls.Add(this.optionsGeneral);
             this.optionsTabs.Controls.Add(this.optionsAuto);
-            this.optionsTabs.Controls.Add(this.OptionsResolutions);
+            this.optionsTabs.Controls.Add(this.OptionsRadii);
             this.optionsTabs.Controls.Add(this.optionsUpdates);
             this.optionsTabs.ItemSize = new System.Drawing.Size(84, 18);
             this.optionsTabs.Location = new System.Drawing.Point(4, 4);
@@ -132,9 +138,9 @@
             this.optionsGeneral1.AutoSize = true;
             this.optionsGeneral1.Location = new System.Drawing.Point(16, 38);
             this.optionsGeneral1.Name = "optionsGeneral1";
-            this.optionsGeneral1.Size = new System.Drawing.Size(346, 17);
+            this.optionsGeneral1.Size = new System.Drawing.Size(318, 17);
             this.optionsGeneral1.TabIndex = 2;
-            this.optionsGeneral1.Text = "Run the Texture Max Load Editor when you log onto Windows";
+            this.optionsGeneral1.Text = "Run the LOD Radius Editor when you log onto Windows";
             this.optionsGeneral1.UseVisualStyleBackColor = true;
             // 
             // optionsGeneral0
@@ -142,9 +148,9 @@
             this.optionsGeneral0.AutoSize = true;
             this.optionsGeneral0.Location = new System.Drawing.Point(16, 15);
             this.optionsGeneral0.Name = "optionsGeneral0";
-            this.optionsGeneral0.Size = new System.Drawing.Size(276, 17);
+            this.optionsGeneral0.Size = new System.Drawing.Size(248, 17);
             this.optionsGeneral0.TabIndex = 1;
-            this.optionsGeneral0.Text = "Run the Texture Max Load Editor when FSX starts";
+            this.optionsGeneral0.Text = "Run the LOD Radius Editor when FSX starts";
             this.optionsGeneral0.UseVisualStyleBackColor = true;
             // 
             // optionsAuto
@@ -218,9 +224,9 @@
             this.optionsAuto1L.AutoSize = true;
             this.optionsAuto1L.Location = new System.Drawing.Point(46, 40);
             this.optionsAuto1L.Name = "optionsAuto1L";
-            this.optionsAuto1L.Size = new System.Drawing.Size(98, 13);
+            this.optionsAuto1L.Size = new System.Drawing.Size(77, 13);
             this.optionsAuto1L.TabIndex = 0;
-            this.optionsAuto1L.Text = "Resolution to set:";
+            this.optionsAuto1L.Text = "Radius to set:";
             // 
             // optionsAuto3
             // 
@@ -243,42 +249,42 @@
             this.optionsAuto0.UseVisualStyleBackColor = true;
             this.optionsAuto0.CheckedChanged += new System.EventHandler(this.optionsAuto0_CheckedChanged);
             // 
-            // OptionsResolutions
+            // OptionsRadii
             // 
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionRemove);
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionEdit);
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionAdd);
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionDefinitionL);
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionDefinition);
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionValueL);
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionValue);
-            this.OptionsResolutions.Controls.Add(this.optionsResolutionR);
-            this.OptionsResolutions.Location = new System.Drawing.Point(4, 22);
-            this.OptionsResolutions.Name = "OptionsResolutions";
-            this.OptionsResolutions.Size = new System.Drawing.Size(374, 134);
-            this.OptionsResolutions.TabIndex = 2;
-            this.OptionsResolutions.Text = "Resolutions";
-            this.OptionsResolutions.UseVisualStyleBackColor = true;
+            this.OptionsRadii.Controls.Add(this.optionsRadiusRemove);
+            this.OptionsRadii.Controls.Add(this.optionsRadiusEdit);
+            this.OptionsRadii.Controls.Add(this.optionsResolutionAdd);
+            this.OptionsRadii.Controls.Add(this.optionsResolutionDefinitionL);
+            this.OptionsRadii.Controls.Add(this.optionsRadiusDefinition);
+            this.OptionsRadii.Controls.Add(this.optionsResolutionValueL);
+            this.OptionsRadii.Controls.Add(this.optionsRadiusValue);
+            this.OptionsRadii.Controls.Add(this.optionsRadiusR);
+            this.OptionsRadii.Location = new System.Drawing.Point(4, 22);
+            this.OptionsRadii.Name = "OptionsRadii";
+            this.OptionsRadii.Size = new System.Drawing.Size(374, 134);
+            this.OptionsRadii.TabIndex = 2;
+            this.OptionsRadii.Text = "Radius List";
+            this.OptionsRadii.UseVisualStyleBackColor = true;
             // 
-            // optionsResolutionRemove
+            // optionsRadiusRemove
             // 
-            this.optionsResolutionRemove.Location = new System.Drawing.Point(199, 99);
-            this.optionsResolutionRemove.Name = "optionsResolutionRemove";
-            this.optionsResolutionRemove.Size = new System.Drawing.Size(55, 23);
-            this.optionsResolutionRemove.TabIndex = 6;
-            this.optionsResolutionRemove.Text = "Remove";
-            this.optionsResolutionRemove.UseVisualStyleBackColor = true;
-            this.optionsResolutionRemove.Click += new System.EventHandler(this.optionsResolutionRemove_Click);
+            this.optionsRadiusRemove.Location = new System.Drawing.Point(199, 99);
+            this.optionsRadiusRemove.Name = "optionsRadiusRemove";
+            this.optionsRadiusRemove.Size = new System.Drawing.Size(55, 23);
+            this.optionsRadiusRemove.TabIndex = 6;
+            this.optionsRadiusRemove.Text = "Remove";
+            this.optionsRadiusRemove.UseVisualStyleBackColor = true;
+            this.optionsRadiusRemove.Click += new System.EventHandler(this.optionsResolutionRemove_Click);
             // 
-            // optionsResolutionEdit
+            // optionsRadiusEdit
             // 
-            this.optionsResolutionEdit.Location = new System.Drawing.Point(199, 68);
-            this.optionsResolutionEdit.Name = "optionsResolutionEdit";
-            this.optionsResolutionEdit.Size = new System.Drawing.Size(55, 23);
-            this.optionsResolutionEdit.TabIndex = 5;
-            this.optionsResolutionEdit.Text = "Edit";
-            this.optionsResolutionEdit.UseVisualStyleBackColor = true;
-            this.optionsResolutionEdit.Click += new System.EventHandler(this.optionsResolutionEdit_Click);
+            this.optionsRadiusEdit.Location = new System.Drawing.Point(199, 68);
+            this.optionsRadiusEdit.Name = "optionsRadiusEdit";
+            this.optionsRadiusEdit.Size = new System.Drawing.Size(55, 23);
+            this.optionsRadiusEdit.TabIndex = 5;
+            this.optionsRadiusEdit.Text = "Edit";
+            this.optionsRadiusEdit.UseVisualStyleBackColor = true;
+            this.optionsRadiusEdit.Click += new System.EventHandler(this.optionsResolutionEdit_Click);
             // 
             // optionsResolutionAdd
             // 
@@ -300,14 +306,14 @@
             this.optionsResolutionDefinitionL.TabIndex = 0;
             this.optionsResolutionDefinitionL.Text = "Definition:";
             // 
-            // optionsResolutionDefinition
+            // optionsRadiusDefinition
             // 
-            this.optionsResolutionDefinition.Location = new System.Drawing.Point(85, 40);
-            this.optionsResolutionDefinition.Name = "optionsResolutionDefinition";
-            this.optionsResolutionDefinition.Size = new System.Drawing.Size(83, 21);
-            this.optionsResolutionDefinition.TabIndex = 2;
-            this.optionsResolutionDefinition.TextChanged += new System.EventHandler(this.optionsResolutionValue_TextChanged);
-            this.optionsResolutionDefinition.MouseDown += new System.Windows.Forms.MouseEventHandler(this.optionsResolutionValueL_MouseDown);
+            this.optionsRadiusDefinition.Location = new System.Drawing.Point(85, 40);
+            this.optionsRadiusDefinition.Name = "optionsRadiusDefinition";
+            this.optionsRadiusDefinition.Size = new System.Drawing.Size(83, 21);
+            this.optionsRadiusDefinition.TabIndex = 2;
+            this.optionsRadiusDefinition.TextChanged += new System.EventHandler(this.optionsResolutionValue_TextChanged);
+            this.optionsRadiusDefinition.MouseDown += new System.Windows.Forms.MouseEventHandler(this.optionsResolutionValueL_MouseDown);
             // 
             // optionsResolutionValueL
             // 
@@ -318,23 +324,23 @@
             this.optionsResolutionValueL.TabIndex = 0;
             this.optionsResolutionValueL.Text = "Value:";
             // 
-            // optionsResolutionValue
+            // optionsRadiusValue
             // 
-            this.optionsResolutionValue.Location = new System.Drawing.Point(85, 14);
-            this.optionsResolutionValue.Name = "optionsResolutionValue";
-            this.optionsResolutionValue.Size = new System.Drawing.Size(83, 21);
-            this.optionsResolutionValue.TabIndex = 1;
-            this.optionsResolutionValue.TextChanged += new System.EventHandler(this.optionsResolutionValue_TextChanged);
-            this.optionsResolutionValue.MouseDown += new System.Windows.Forms.MouseEventHandler(this.optionsResolutionValueL_MouseDown);
+            this.optionsRadiusValue.Location = new System.Drawing.Point(85, 14);
+            this.optionsRadiusValue.Name = "optionsRadiusValue";
+            this.optionsRadiusValue.Size = new System.Drawing.Size(83, 21);
+            this.optionsRadiusValue.TabIndex = 1;
+            this.optionsRadiusValue.TextChanged += new System.EventHandler(this.optionsResolutionValue_TextChanged);
+            this.optionsRadiusValue.MouseDown += new System.Windows.Forms.MouseEventHandler(this.optionsResolutionValueL_MouseDown);
             // 
-            // optionsResolutionR
+            // optionsRadiusR
             // 
-            this.optionsResolutionR.FormattingEnabled = true;
-            this.optionsResolutionR.Location = new System.Drawing.Point(260, 14);
-            this.optionsResolutionR.Name = "optionsResolutionR";
-            this.optionsResolutionR.Size = new System.Drawing.Size(102, 108);
-            this.optionsResolutionR.TabIndex = 4;
-            this.optionsResolutionR.SelectedIndexChanged += new System.EventHandler(this.optionsResolutionR_SelectedIndexChanged);
+            this.optionsRadiusR.FormattingEnabled = true;
+            this.optionsRadiusR.Location = new System.Drawing.Point(260, 14);
+            this.optionsRadiusR.Name = "optionsRadiusR";
+            this.optionsRadiusR.Size = new System.Drawing.Size(102, 108);
+            this.optionsRadiusR.TabIndex = 4;
+            this.optionsRadiusR.SelectedIndexChanged += new System.EventHandler(this.optionsResolutionR_SelectedIndexChanged);
             // 
             // optionsUpdates
             // 
@@ -356,7 +362,7 @@
             this.optionsUpdates1.Name = "optionsUpdates1";
             this.optionsUpdates1.Size = new System.Drawing.Size(226, 40);
             this.optionsUpdates1.TabIndex = 1;
-            this.optionsUpdates1.Text = "Check for updates when the Texture Max Load Editor starts";
+            this.optionsUpdates1.Text = "Check for updates when the Level of Detail Radius Editor starts";
             this.optionsUpdates1.UseVisualStyleBackColor = true;
             // 
             // optionsUpdatesPast
@@ -364,11 +370,8 @@
             this.optionsUpdatesPast.Cursor = System.Windows.Forms.Cursors.Hand;
             this.optionsUpdatesPast.FormattingEnabled = true;
             this.optionsUpdatesPast.Items.AddRange(new object[] {
-            "2.0 Build 1",
-            "1.2 Build 197",
-            "1.2 Build 196",
-            "1.2 Build 195",
-            "1.2 Build 194"});
+            "1.0 Build 0",
+            "1.0 Build 1"});
             this.optionsUpdatesPast.Location = new System.Drawing.Point(248, 53);
             this.optionsUpdatesPast.Name = "optionsUpdatesPast";
             this.optionsUpdatesPast.Size = new System.Drawing.Size(114, 69);
@@ -462,8 +465,8 @@
             this.optionsGeneral.PerformLayout();
             this.optionsAuto.ResumeLayout(false);
             this.optionsAuto.PerformLayout();
-            this.OptionsResolutions.ResumeLayout(false);
-            this.OptionsResolutions.PerformLayout();
+            this.OptionsRadii.ResumeLayout(false);
+            this.OptionsRadii.PerformLayout();
             this.optionsUpdates.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -474,7 +477,7 @@
         private System.Windows.Forms.TabControl optionsTabs;
         private System.Windows.Forms.TabPage optionsGeneral;
         private System.Windows.Forms.TabPage optionsAuto;
-        private System.Windows.Forms.TabPage OptionsResolutions;
+        private System.Windows.Forms.TabPage OptionsRadii;
         private System.Windows.Forms.TabPage optionsUpdates;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.RadioButton optionsGeneral31;
@@ -485,9 +488,9 @@
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button optionsResolutionAdd;
         private System.Windows.Forms.Label optionsResolutionDefinitionL;
-        private System.Windows.Forms.TextBox optionsResolutionDefinition;
+        private System.Windows.Forms.TextBox optionsRadiusDefinition;
         private System.Windows.Forms.Label optionsResolutionValueL;
-        private System.Windows.Forms.TextBox optionsResolutionValue;
+        private System.Windows.Forms.TextBox optionsRadiusValue;
         private System.Windows.Forms.ListBox optionsUpdatesPast;
         private System.Windows.Forms.Button optionsUpdatesCheck;
         private System.Windows.Forms.Label optionsUpdatesVersions;
@@ -497,9 +500,9 @@
         private System.Windows.Forms.TextBox optionsAuto2;
         private System.Windows.Forms.Label optionsAuto2L;
         public System.Windows.Forms.ComboBox optionsAuto1;
-        internal System.Windows.Forms.ListBox optionsResolutionR;
-        public System.Windows.Forms.Button optionsResolutionRemove;
-        public System.Windows.Forms.Button optionsResolutionEdit;
+        internal System.Windows.Forms.ListBox optionsRadiusR;
+        public System.Windows.Forms.Button optionsRadiusRemove;
+        public System.Windows.Forms.Button optionsRadiusEdit;
         private System.Windows.Forms.OpenFileDialog locateFileDialog;
         private System.Windows.Forms.ToolTip optionsAutoToolTip;
         private System.Windows.Forms.CheckBox optionsUpdates1;
