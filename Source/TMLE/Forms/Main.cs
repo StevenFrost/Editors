@@ -81,7 +81,7 @@ namespace TextureMaxLoadEditor.Forms
             {
                 if (File.Exists(Application.StartupPath + @"\Resources\core.resource"))
                 {
-                    if (hash.Match(Application.StartupPath + @"\Resources\core.resource", "700BE7CE784D666F91B911C149E5602B48652939"))
+                    if (hash.Match(Application.StartupPath + @"\Resources\core.resource", "DDAE1DD174117AC9ABADCBA70323590F77F67513"))
                     {
                         // Get the file lines one by one
                         string[] lines = File.ReadAllLines(Application.StartupPath + @"\Resources\core.resource");

@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.optionsTabs = new System.Windows.Forms.TabControl();
             this.optionsGeneral = new System.Windows.Forms.TabPage();
             this.optionsGeneral31 = new System.Windows.Forms.RadioButton();
@@ -55,7 +56,7 @@
             this.saveButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.locateFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.optionsAutoToolTip = new System.Windows.Forms.ToolTip();
+            this.optionsAutoToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.defaultSettings = new System.Windows.Forms.Button();
             this.optionsTabs.SuspendLayout();
             this.optionsGeneral.SuspendLayout();
@@ -364,11 +365,12 @@
             this.optionsUpdatesPast.Cursor = System.Windows.Forms.Cursors.Hand;
             this.optionsUpdatesPast.FormattingEnabled = true;
             this.optionsUpdatesPast.Items.AddRange(new object[] {
-            "2.0 Build 1",
-            "1.2 Build 197",
-            "1.2 Build 196",
+            "1.2 Build 194",
             "1.2 Build 195",
-            "1.2 Build 194"});
+            "1.2 Build 196",
+            "1.2 Build 197",
+            "2.0 Build 1",
+            "2.0 Build 2"});
             this.optionsUpdatesPast.Location = new System.Drawing.Point(248, 53);
             this.optionsUpdatesPast.Name = "optionsUpdatesPast";
             this.optionsUpdatesPast.Size = new System.Drawing.Size(114, 69);
